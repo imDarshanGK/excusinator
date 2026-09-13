@@ -81,7 +81,7 @@
     align-items:flex-start;
     border-bottom: 2px solid var(--ink);
     padding-bottom: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 26px;
   }
   .masthead h1{
     font-size: 20px;
@@ -217,10 +217,10 @@
 
   .stamp{
     position:absolute;
-    top: 96px;
-    right: 26px;
-    width: 128px;
-    height: 128px;
+    top: 128px;
+    right: 12px;
+    width: 116px;
+    height: 116px;
     border: 5px solid var(--stamp);
     border-radius: 50%;
     display:flex;
@@ -261,7 +261,7 @@
 
   @media (max-width: 480px){
     .form{ padding: 26px 20px 24px; }
-    .stamp{ width: 96px; height:96px; font-size:11px; top: 130px; right: 14px;}
+    .stamp{ width: 92px; height:92px; font-size:11px; top: 158px; right: 10px;}
   }
 </style>
 </head>
@@ -293,7 +293,7 @@
 
     <div class="field">
       <label for="who">Excuse addressed to (optional)</label>
-      <input id="who" type="text" placeholder="e.g. Deepika, my manager, the group chat">
+      <input id="who" type="text" placeholder="e.g. Darshan, my manager, the group chat">
     </div>
 
     <div class="excuse-block" id="excuseBlock">
@@ -431,7 +431,7 @@
   function render(text, score){
     el.excuseBlock.textContent = text;
     el.meterFill.style.width = score + '%';
-    el.meterFill.classList.toggle('low', score < 40);
+    el.meterFill.classList.toggle('low', score < 55);
     el.meterNum.textContent = score + '%';
     el.copyBtn.disabled = false;
     el.linkBtn.disabled = false;
